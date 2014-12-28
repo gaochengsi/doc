@@ -7,33 +7,33 @@ kramdown:
 
 # 作者信息
 author: 
-  name: 闫肃
-  email: suyan0830@gmail.com
-  link: http://yansu.org
-  weibo: http://weibo.com/yansu0711
-  github: http://github.com/suyan
+  name: itfanr
+  email: bjq1016@126.com
+  link: http://my.oschina.net/itfanr
+  weibo: http://weibo.com/itfan
+  github: http://github.com/itfanr
 
 # 站点信息
-title: 闫肃的博客 
-description: 闫肃的博客
-url: http://yansu.org
+title: radxa入门汇总
+description: raxda开发板的相关资料等汇总
+url: http://itfanr.github.io/radxa123/
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://yansu-uploads.stor.sinaapp.com/imgs/gavatar.png
-favicon: http://yansu-uploads.stor.sinaapp.com/imgs/favicon.ico
+gavatar: http://itfanr.qiniudn.com/2014-12-28-gavatar.jpg
+favicon: http://itfanr.qiniudn.com/2014-12-28-favicon.ico
 
 # google analytics 设置
-ga:
-  id: UA-54767140-1
-  url: yansu.org
+#ga:
+#  id: UA-54767140-1
+#  url: yansu.org
 
 # disqus 设置
 disqus:
-  shortname: suyan-zh
+  shortname: itfanr
 
 # 主题设置，自动激活某个标签
-active: 技术
+active: 入门
 
 # 首页除了最新文章外显示分类
 cates: 
