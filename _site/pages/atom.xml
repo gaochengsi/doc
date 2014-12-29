@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0">
+  <channel>
+    <title>radxa入门汇总</title>
+    <link>http://itfanr.github.io/radxa123</link>
+    <description>raxda开发板的相关资料等汇总</description>
+    
+      <item>
+        <title>将image少写到NAND</title>
+        <link>http://itfanr.github.io/radxa123/radxa123/2014/12/28/Flash-the-image-to-NAND.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/radxa123/2014/12/28/Flash-the-image-to-NAND.html</guid>
+        <pubDate>Sun, 28 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;This page describes how to install an image to the nand flash of Radxa Rock, ie, how to flash the board. You can choose to either flash the whole nand image (ie, update.img) to the board or just flash the selected partitions. You can download the prebuilt images from our server or build your own images.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;##Before you start&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>回退Mac上用Brew安装的PHP版本</title>
+        <link>http://itfanr.github.io/radxa123/radxa123/2014/09/26/use-old-version-of-brew-php.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/radxa123/2014/09/26/use-old-version-of-brew-php.html</guid>
+        <pubDate>Fri, 26 Sep 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;昨天随手一点&lt;code&gt;brew upadte &amp;amp; brew upgrade&lt;/code&gt;后phpunit出现了各种F，细查下来原来是 php 5.5.17 的一个&lt;a href=&quot;https://bugs.php.net/bug.php?id=67839&quot;&gt;bug fix&lt;/a&gt; 引起的。为了暂时正常使用phpunit，只能回退php的版本。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;版本切换方式&lt;/h2&gt;
+
+&lt;p&gt;通过brew安装的php可以通过&lt;code&gt;brew link&lt;/code&gt;和&lt;code&gt;brew unlink&lt;/code&gt;来切换不同版本。&lt;/p&gt;
+
+&lt;p&gt;例如&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew list
+brew unlink php56
+brew link php55
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;大版本可以用&lt;code&gt;brew list&lt;/code&gt;来查，如果是小版本的话只能去&lt;code&gt;/usr/local/Cellar/php55&lt;/code&gt;看了。这个时候使用&lt;code&gt;php-version&lt;/code&gt;可以更方便一点。&lt;/p&gt;
+
+&lt;h2 id=&quot;php-version&quot;&gt;安装&lt;code&gt;php-version&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://github.com/wilmoore/php-version&quot;&gt;php-version&lt;/a&gt;是一个帮助管理从brew安装的php版本切换的工具。&lt;/p&gt;
+
+&lt;p&gt;安装非常简单&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;brew install php-version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后执行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;source $(brew --prefix php-version)/php-version.sh &amp;amp;&amp;amp; php-version 5
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;h2 id=&quot;php-version-1&quot;&gt;使用&lt;code&gt;php-version&lt;/code&gt;&lt;/h2&gt;
+
+&lt;p&gt;直接执行&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php-version
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;就可以看到现有的版本，比如我自己的&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;$ php-version
+  5.5.15
+* 5.5.16
+  5.5.17
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;然后使用以下命令切换即可&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-bash&quot;&gt;php-version 5.5.15
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;再看php的版本，已经切换好了。&lt;/p&gt;
+</description>
+      </item>
+    
+  </channel>
+</rss>

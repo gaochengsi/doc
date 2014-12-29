@@ -1,0 +1,16 @@
+
+  /pages/about.html
+
+  /pages/archive.html
+
+  /pages/atom.xml
+
+  /index.html
+
+  /sitemap.txt
+
+
+
+  /radxa123/2014/12/28/Flash-the-image-to-NAND.html
+
+  /radxa123/2014/09/26/use-old-version-of-brew-php.html
