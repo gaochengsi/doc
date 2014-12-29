@@ -1,3 +1,4 @@
+baseurl: /radxa123
 permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: kramdown
@@ -16,9 +17,8 @@ author:
 # 站点信息
 title: radxa入门汇总
 description: raxda开发板的相关资料等汇总
-url: http://itfanr.github.io/
-baseurl: /radxa123
-rss_url: /pages/atom.xml
+url: http://itfanr.github.io/radxa123
+rss_url: radxa123/pages/atom.xml
 
 # gavatar头像及Favicon
 gavatar: http://itfanr.qiniudn.com/2014-12-28-gavatar.jpg
@@ -39,6 +39,7 @@ active: 入门
 # 首页除了最新文章外显示分类
 cates: 
   - 入门
+  - 产品
 
 
 # 中文本地化

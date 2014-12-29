@@ -7,8 +7,8 @@
     
       <item>
         <title>将image少写到NAND</title>
-        <link>http://itfanr.github.io/radxa123/radxa123/2014/12/28/Flash-the-image-to-NAND.html</link>
-        <guid isPermaLink="true">http://itfanr.github.io/radxa123/radxa123/2014/12/28/Flash-the-image-to-NAND.html</guid>
+        <link>http://itfanr.github.io/radxa123/2014/12/28/Flash-the-image-to-NAND.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/28/Flash-the-image-to-NAND.html</guid>
         <pubDate>Sun, 28 Dec 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
   &lt;p&gt;This page describes how to install an image to the nand flash of Radxa Rock, ie, how to flash the board. You can choose to either flash the whole nand image (ie, update.img) to the board or just flash the selected partitions. You can download the prebuilt images from our server or build your own images.&lt;/p&gt;
@@ -20,8 +20,8 @@
     
       <item>
         <title>回退Mac上用Brew安装的PHP版本</title>
-        <link>http://itfanr.github.io/radxa123/radxa123/2014/09/26/use-old-version-of-brew-php.html</link>
-        <guid isPermaLink="true">http://itfanr.github.io/radxa123/radxa123/2014/09/26/use-old-version-of-brew-php.html</guid>
+        <link>http://itfanr.github.io/radxa123/2014/09/26/use-old-version-of-brew-php.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/09/26/use-old-version-of-brew-php.html</guid>
         <pubDate>Fri, 26 Sep 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
   &lt;p&gt;昨天随手一点&lt;code&gt;brew upadte &amp;amp; brew upgrade&lt;/code&gt;后phpunit出现了各种F，细查下来原来是 php 5.5.17 的一个&lt;a href=&quot;https://bugs.php.net/bug.php?id=67839&quot;&gt;bug fix&lt;/a&gt; 引起的。为了暂时正常使用phpunit，只能回退php的版本。&lt;/p&gt;

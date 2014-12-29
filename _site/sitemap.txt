@@ -11,6 +11,6 @@
 
 
 
-  /radxa123/2014/12/28/Flash-the-image-to-NAND.html
+  /2014/12/28/Flash-the-image-to-NAND.html
 
-  /radxa123/2014/09/26/use-old-version-of-brew-php.html
+  /2014/09/26/use-old-version-of-brew-php.html
