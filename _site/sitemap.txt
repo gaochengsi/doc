@@ -11,8 +11,14 @@
 
 
 
+  /2014/12/29/resources-and-community.html
+
   /2014/12/29/products.html
 
-  /2014/12/29/community.html
+  /2014/12/29/differences-between-products.html
+
+  /2014/12/29/Q-and-A.html
+
+  /2014/12/29/20130812-Engineering-samples.html
 
   /2014/12/28/Flash-the-image-to-NAND.html

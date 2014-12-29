@@ -6,31 +6,153 @@
     <description>raxda开发板的相关资料等汇总</description>
     
       <item>
-        <title>radxa系列产品介绍</title>
+        <title>各种资源和社区</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/29/resources-and-community.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/resources-and-community.html</guid>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;radxa有很多资源和社区，各路大神帮你答疑解惑，各种资源应有尽有。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://radxa.com/&quot;&gt;英文官网&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://cn.radxa.com/&quot;&gt;中文论坛cn.radxa.com&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://talk.radxa.com/&quot;&gt;Radxa Talk&lt;/a&gt; &lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://plus.google.com/
+communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://www.facebook.com/groups/218416868348521/&quot;&gt;Facebook Group Page&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;https://groups.google.com/forum/#!forum/radxa&quot;&gt;radxa google groups&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://webchat.freenode.net/?channels=radxa&quot;&gt;IRC channel on Freenode&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://radxa.com/Rock/download&quot;&gt;下载 &lt;/a&gt;  源码、镜像、工具、原理图&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>radxa产品及配件</title>
         <link>http://itfanr.github.io/radxa123/2014/12/29/products.html</link>
         <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/products.html</guid>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;Radxa Rock是Radxa公司生产的基于RK3188的单板计算机（SBC，Single Board Computer）。它有&lt;strong&gt;4核&lt;/strong&gt;的ARM处理器，可以运行一些Linux的发行版。它也有80个2.54mm的pin，这使得连接其他传感器或者使用GPIO变得非常简单。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Radxa Rock支持Android 4.2.2（Jelly Bean）和Ubuntu/Linaro 13.09在NAND falsh（板上存储）上双启动。Rock Pro支持Android 4.4.2（Kitkat）在NAND flash上启动。&lt;/p&gt;
+
+&lt;p&gt;你可以&lt;a href=&quot;http://radxa.com/Rock/flash_the_image&quot;&gt;烧写&lt;/a&gt;最新的&lt;a href=&quot;http://radxa.com/Rock/prebuilt_images&quot;&gt;Android镜像和各种Linux镜像&lt;/a&gt;，或者你可以尝试&lt;a href=&quot;http://radxa.com/Rock/SD_images&quot;&gt;从SD card启动&lt;/a&gt;Android/Linux。你可以&lt;a href=&quot;http://radxa.com/Rock/Android_Build&quot;&gt;编译你自己的Android&lt;/a&gt;、&lt;a href=&quot;http://radxa.com/Rock/Booting_Linux&quot;&gt;编译自己的内核&lt;/a&gt;、&lt;a href=&quot;http://radxa.com/Rock/ubuntu&quot;&gt;编译自己的Ubuntu 根文件系统&lt;/a&gt;，或者做你喜欢的其他事情。&lt;/p&gt;
+
+&lt;p&gt;###随板配件###&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;radxa rock 开发板&lt;/li&gt;
+  &lt;li&gt;USB转直流电源线&lt;/li&gt;
+  &lt;li&gt;WiFi 天线&lt;/li&gt;
+  &lt;li&gt;你可以买 Full Transparent Case来更好的保护开发板。&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;你也可以需要下面的基础外设让Radxa工作：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;带有A类型USB的电源适配器，至少5V/2A（这点很重要）&lt;/li&gt;
+  &lt;li&gt;TV显示器（接口为HDMI或者AV）&lt;/li&gt;
+  &lt;li&gt;HDMI或者AV线&lt;/li&gt;
+  &lt;li&gt;网线或者使用WiFi&lt;/li&gt;
+  &lt;li&gt;USB键盘/鼠标或者USB无线空鼠&lt;/li&gt;
+  &lt;li&gt;红外IR遥控器&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;如果你有下面这些那就更好了：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;micro USB线&lt;/li&gt;
+  &lt;li&gt;串口TTL转USB线&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;当一切准备妥当，它和下面的样子就差不多了&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/6/6f/Hookup.png&quot; alt=&quot;radxa的样子&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;###开机###&lt;/p&gt;
+
+&lt;p&gt;将直流转USB线连接上USB电源，另一端插入开发板的DC直流接口。电源键下面的红色指示灯应该亮起，同时HDMI应该输出radxa的启动logo动画。等一会绿色或者蓝色指示灯会亮起。&lt;/p&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>radxa系列产品的比较</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/29/differences-between-products.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/differences-between-products.html</guid>
+        <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;随着产品的发布和更新，radxa产品越来越多。看看它们的区别吧。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;##radxa rock 、radxa rock lite和 radxa rock pro三者的区别&lt;/p&gt;
+
+&lt;p&gt;主要的区别是：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;radxa rock pro(2014年中): 2GB ram, 8GB nand flash with lvds and camera interface&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;radxa rock lite(2014年中): 1GB ram, no nand flash(use uSD card for the OS), wifi only&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;radxa rock(2013): 2GB ram, 8GB nand flash, wifi and bluetooth&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;radxa rock lite(2013): 1GB ram, 4GB nand flash, wifi only&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Q and A</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/29/Q-and-A.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/Q-and-A.html</guid>
         <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
         <description>
 </description>
       </item>
     
       <item>
-        <title>各种资源和社区</title>
-        <link>http://itfanr.github.io/radxa123/2014/12/29/community.html</link>
-        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/community.html</guid>
+        <title>2013.08.12 工程板</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/29/20130812-Engineering-samples.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/20130812-Engineering-samples.html</guid>
         <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
         <description>&lt;blockquote&gt;
-  &lt;p&gt;radxa有很多社区，各路大神帮你答疑解惑，各种资源应有尽有。&lt;/p&gt;
+  &lt;p&gt;2013.08.12 值得记住的日子&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;p&gt;第一块radxa rock样板也叫radxa rock工程板，只生产了100片。几乎所有的东西都运行良好。但是还是有一些小问题：&lt;/p&gt;
+
 &lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;http://cn.radxa.com/&quot;&gt;中文论坛cn.radxa.com&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://talk.radxa.com/&quot;&gt;Radxa Talk&lt;/a&gt; &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://plus.google.com/communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://www.facebook.com/groups/218416868348521/&quot;&gt;Facebook Group Page&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;https://groups.google.com/forum/#!forum/radxa&quot;&gt;radxa google groups&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;http://webchat.freenode.net/?channels=radxa&quot;&gt;IRC channel on Freenode&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;HDMI接口太靠近SPDIF 插孔，可能会与一些大头的HDMI线冲突&lt;/li&gt;
+  &lt;li&gt;UART可以被一些5V TTL转USB损坏（警告：请务必使用3.3V TTL转USB线）&lt;/li&gt;
+  &lt;li&gt;复位键可以作为POWER halt功能，重启板子需要按重启键然后按电源键。&lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/thumb/a/ad/Rock_es_front.png/1000px-Rock_es_front.png&quot; alt=&quot;&quot; /&gt;&lt;/p&gt;
 
 </description>
       </item>
