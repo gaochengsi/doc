@@ -24,14 +24,9 @@ rss_url: radxa123/pages/atom.xml
 gavatar: http://itfanr.qiniudn.com/2014-12-28-gavatar.jpg
 favicon: http://itfanr.qiniudn.com/2014-12-28-favicon.ico
 
-# google analytics 设置
-#ga:
-#  id: UA-54767140-1
-#  url: yansu.org
-
 # disqus 设置
 disqus:
-  shortname: itfanr
+  shortname: radxa123
 
 # 主题设置，自动激活某个标签
 active: 入门
@@ -39,7 +34,7 @@ active: 入门
 # 首页除了最新文章外显示分类
 cates: 
   - 入门
-  - 产品
+  - 创意 
 
 
 # 中文本地化
