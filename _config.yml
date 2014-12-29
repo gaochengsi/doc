@@ -1,4 +1,4 @@
-permalink: /radxa123/:year/:month/:day/:title.html
+permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: kramdown
 
@@ -16,7 +16,8 @@ author:
 # 站点信息
 title: radxa入门汇总
 description: raxda开发板的相关资料等汇总
-url: http://itfanr.github.io/radxa123
+url: http://itfanr.github.io/
+baseurl: /radxa123
 rss_url: /pages/atom.xml
 
 # gavatar头像及Favicon
