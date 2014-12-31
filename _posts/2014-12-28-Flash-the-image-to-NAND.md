@@ -6,15 +6,14 @@ tags: [入门, Flash, image, NAND]
 keywords: PHP,Mac,Brew,旧版本,Version
 description: 
 ---
->这篇文章描述了如何在Radxa Rock的nand flash上安装镜像，比如，如何烧写开发板。你可以选择烧写整个nand镜像（比如update.img）到开发板或者仅仅烧写选定的分区。你可以从我们的服务器下载prebuilt镜像
-或者编译你自己的镜像。
+>这篇文章描述了如何在Radxa Rock的nand flash上安装镜像，比如，如何烧写开发板。你可以选择烧写整个nand镜像（比如update.img）到开发板或者仅仅烧写选定的分区。你可以从我们的服务器下载prebuilt镜像或者编译你自己的镜像。
 
 ##  在你开始之前
 
 记住：
 
 ```
-你开业常常烧写rock，它不会变成板砖除非一些硬件损坏了。
+你可以一直烧写rock，它不会变成板砖，除非一些硬件损坏了。
 ```
 
 烧写开发板你需要做的是：
@@ -32,11 +31,11 @@ description:
 1. 使用RKDriver Assistant tools-这是简单的方式（仅支持winxp,Vista,win7，不支持 win8）
 2. 手动安装（支持winxp,vista,win7,win8）
 
-如果你已经安装了USB 驱动，请跳过这一把。
+如果你已经安装了USB驱动，请跳过这一步。
 
 #### a.使用RDKriver Assistant tools
 
-注意：这个理论仅支持winxp,vista,win7,不支持win8。
+注意：这个方式仅支持winxp,vista,win7,不支持win8。
 
 在这个过程中仅仅下载和解压[RKDriverAssistant.zip](http://dl.radxa.com/rock/tools/windows/RK_DriverAssitant.zip)，没必要连接你的Rockchip设备。然后双击 DriverInstall.exe 启动安装。如果你已经事先已经安装过了Rockchip USB 驱动，请先确保你卸载了。
 
