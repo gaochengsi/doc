@@ -78,7 +78,7 @@ description:
 1. 使用RKBatch Tool（工厂更新固件工具，只烧写update.img，它会擦出所有的东西）
 2. 使用RKAndroid Tool(开发工具，可以烧写分区)
 
-###  使用RKBatch Tool来烧写update.img
+####  使用RKBatch Tool来烧写update.img
 
 从[这里](http://dl.radxa.com/rock/tools/windows/RK_BatchTool_V1.7.zip)下载RKbatch Tool。解压并运行RKBatch Tool.exe，你会看到下面的界面：
 
@@ -98,7 +98,7 @@ description:
 
 如果烧写中断，它会导致update.img出现错误，你可以重新操作以上步骤或者重新制作update.img。
 
-### 使用RKAndroid Tool来烧写到分区
+#### 使用RKAndroid Tool来烧写到分区
 
 从[这里](http://dl.radxa.com/rock/tools/windows/RKDevelopTool_v1.37.zip)下载RKAndroid Tool。解压，然后运行RKAndroidTool.exe，你会看到：
 
