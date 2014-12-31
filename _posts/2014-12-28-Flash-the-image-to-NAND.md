@@ -119,5 +119,50 @@ description:
 1. 当你通过`./mkimage.sh ota`命令打包镜像，内核会在boot.img里面，你应该看[Rock/Android_Build ](http://radxa.com/Rock/Android_Build)得到更多信息。
 2. 你可以按照需求一次性烧写一个或多个镜像。
 
-### 解决问题
+### 常见问题
 
+#### 问题1:  recovery模式下 RKBatchTool 检测不到开发板
+
+情景1：
+
+我已经手动安装了驱动，并且Recovery模式的USB为PID_310B，“Rockusb device”驱动在Vista上安装成功了，但是RKBatchTool连接不到RK3188的板子，导致无法烧写镜像。
+
+解决办法:
+
+RK3188板通过USB3.0 PMMCIA卡连接到笔记本电脑。这是一个USB2.0到USB3.0的兼容性问题，所以USB3.0端口换成USB 2.0端口，然后RKBatchTool应该可以连接到RK3188板子来烧写镜像了。
+
+说明:
+1.Recovery 模式 : USB 设备硬件:  VID_2207&PID_310
+
+2.引导进Android:  USB 设备硬件: VID_2207&PID_0006
+
+情景2：
+
+驱动安装正常，PC可以识别到设备，确定进入了recovery模式，但是一直BatchTool一直无法识别设备。
+
+原因分析：使用了自己从网上下载的刷机工具，比如BatchTool 1.5.
+
+解决办法：使用教程中指定的BatchTool工具
+
+#### 问题2: 烧写失败
+情景1：烧写后，串口打印：
+
+```
+DDR Version 1.04 20130517 In DDR3 300MHz Bus Width=32 Col=10 Bank=8 Row=15 CS=2 Die Bus-Width=16 Size=2048MB Memory OK OUT BUILD=====6 SdmmcInit=0 20 F:32 1061 0 0 40 FlashReadRetry error!!,row = fff000 FlashReadRetry error!!,row = fff000   
+ ```
+同时无法引导。
+
+
+解决办法:
+
+如果烧写失败，尝试在烧写前格式化NandFlash。
+
+RKAndroidTool - 单击 “Erease IDB”按钮，格式化NandFlash。
+RKBatchTool    - 单击 “Restore”按钮格式化，然后烧写镜像。
+
+情景2: 刷机的时候 遇到 Preparing IDB failed
+这有两种情况 
+
+1）USB线供电不足，此时建议更换质量好的USB线 或者在进入刷机模式后插上电源
+
+2 ) bootloader 版本不同导致，如果你之前刷的固件的bootloader版本是高版本，然后刷回低版本的固件，那么你可能会遇到这个问题。板子这是“变砖”了。。。按照这个 http://wiki.radxa.com/Rock/unbrick 解决它。
