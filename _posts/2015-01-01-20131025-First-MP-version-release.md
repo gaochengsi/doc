@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 2013.10.25第一个MP版本
+title: 2013.10.25 第一个MP版本
 category: 产品
 tags: [产品]
 keywords: radxa
