@@ -16,7 +16,7 @@ description:
 
 
 
-- [Radxa Talk](http://talk.radxa.com/) 
+- [英文论坛Radxa Talk](http://talk.radxa.com/) 
 
 
 - [Radxa Google Plus community](https://plus.google.com/
@@ -32,11 +32,11 @@ communities/114007636590240429960)
 
 - [IRC channel on Freenode](http://webchat.freenode.net/?channels=radxa)
 
+- [Radxa wiki](http://wiki.radxa.com/Rock)
 
 
-
-- [下载 ](http://radxa.com/Rock/download)  源码、镜像、工具、原理图
-
+- [下载源码、镜像、工具、原理图
+](http://radxa.com/Rock/download)  
 
 
 

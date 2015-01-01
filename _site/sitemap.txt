@@ -9,9 +9,19 @@
 
   /sitemap.txt
 
+  /page2/index.html
 
+
+
+  /2015/01/01/Radxa-Rock-Pro-parameter.html
+
+  /2015/01/01/Radxa-Rock-Lite-parameter.html
 
   /2014/12/31/radxa-rock-display.html
+
+  /2014/12/31/enter-recovery-mode.html
+
+  /2014/12/31/Radxa-Rock-Lite-docs.html
 
   /2014/12/29/resources-and-community.html
 

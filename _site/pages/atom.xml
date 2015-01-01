@@ -6,6 +6,111 @@
     <description>raxda开发板的相关资料等汇总</description>
     
       <item>
+        <title>Radxa Rock Pro的硬件配置</title>
+        <link>http://itfanr.github.io/radxa123/2015/01/01/Radxa-Rock-Pro-parameter.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2015/01/01/Radxa-Rock-Pro-parameter.html</guid>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;揭开Radxa Rock Pro的面纱&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;处理器：ARM CORTEX-A9 QUAD CORE @1.6GHZ&lt;/li&gt;
+  &lt;li&gt;图像处理器：MAIL400-MP4@533MHZ,OPENGL ES 2.0&lt;/li&gt;
+  &lt;li&gt;RAM:2GB DDR3,800MHZ&lt;/li&gt;
+  &lt;li&gt;内存：8GB FLASH&lt;/li&gt;
+  &lt;li&gt;视频输出
+    &lt;ul&gt;
+      &lt;li&gt;数字输出：HDMI1.4，最大支持1080P&lt;/li&gt;
+      &lt;li&gt;模拟输出：AV端口输出&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;音频输出：
+    &lt;ul&gt;
+      &lt;li&gt;3.5MM 音频口&lt;/li&gt;
+      &lt;li&gt;S/PDIF&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;调试：支持串口调试&lt;/li&gt;
+  &lt;li&gt;电源输入：5V DC接口&lt;/li&gt;
+  &lt;li&gt;USB：
+    &lt;ul&gt;
+      &lt;li&gt;两个USB 2.0 HOST，TYPE A&lt;/li&gt;
+      &lt;li&gt;一个USB OTG，miro USB接口&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;串口：板载有串口引脚&lt;/li&gt;
+  &lt;li&gt;以太网支持：10/100M bit/s RJ45接口&lt;/li&gt;
+  &lt;li&gt;SD/MMC卡：可外接micro SD卡，最大支持128G内存卡&lt;/li&gt;
+  &lt;li&gt;按键输入：一个电源键，一个复位键，一个恢复键&lt;/li&gt;
+  &lt;li&gt;LED灯：三个可编程的LED灯&lt;/li&gt;
+  &lt;li&gt;实时时钟：板载有实时时钟&lt;/li&gt;
+  &lt;li&gt;红外：一个红外接收器&lt;/li&gt;
+  &lt;li&gt;扩展：共有80个pins
+    &lt;ul&gt;
+      &lt;li&gt;支持GPIO,I2C,SPI,line in，USB2.0 ，PWM,ADC,LCD,GPS等&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;重量：61克（仅主板） &lt;/li&gt;
+  &lt;li&gt;尺寸：100*80 MM&lt;/li&gt;
+  &lt;li&gt;系统：支持Linux、Andriod、FreeBSD系统，默认搭载Android4.2.2&lt;/li&gt;
+&lt;/ul&gt;
+
+</description>
+      </item>
+    
+      <item>
+        <title>Radxa Rock Lite的硬件配置</title>
+        <link>http://itfanr.github.io/radxa123/2015/01/01/Radxa-Rock-Lite-parameter.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2015/01/01/Radxa-Rock-Lite-parameter.html</guid>
+        <pubDate>Thu, 01 Jan 2015 00:00:00 +0800</pubDate>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;揭开Radxa Rock Lite的面纱&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;产品简介&lt;/h2&gt;
+
+&lt;p&gt;Radxa Rock Lite是一款基于ARM Cortex-A9构架的开源四核开发板，搭载了国内首款采用28nm工艺瑞芯微RK3188芯片，主频最高达到1.6Ghz，比主流的32nm工艺三星Exynos 4412处理器，还有40nm工艺的Tegra3功耗更低，官方宣称运算速度比Cortex-A7提升35%。&lt;/p&gt;
+
+&lt;p&gt;拥有1G内存、板载wifi\RTC,外围接口丰富，新增LVDS 接口,触摸屏接口,camera 摄像头接口,板载扬声器驱动电路,板载80扩展PIN，支持GPIO, I2C, SPI, Line in, USB 2.0, PWM, ADC, LCD, GPS等，性价比超高，是一款理想的diy开发板。&lt;/p&gt;
+
+&lt;h2 id=&quot;section-1&quot;&gt;产品配置&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;处理器：ARM Cortex-A9,四核RK3188处理器&lt;/li&gt;
+  &lt;li&gt;支持wifi&lt;/li&gt;
+  &lt;li&gt;HDMI输出接口，1080p@60Hz&lt;/li&gt;
+  &lt;li&gt;自带两个2.0 USB和一个OTG接口&lt;/li&gt;
+  &lt;li&gt;1G-DDR3内存&lt;/li&gt;
+  &lt;li&gt;支持RTC ，TF卡&lt;/li&gt;
+  &lt;li&gt;支持Linux、Andriod、FreeBSD系统&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;section-2&quot;&gt;硬件清单&lt;/h2&gt;
+&lt;ol&gt;
+  &lt;li&gt;Radxa Rock Lite开发板*1&lt;/li&gt;
+  &lt;li&gt;电源线*1&lt;/li&gt;
+  &lt;li&gt;可拆卸wifi天线*1&lt;/li&gt;
+  &lt;li&gt;亚克力外壳*1&lt;/li&gt;
+  &lt;li&gt;环保外包装*1&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h2 id=&quot;section-3&quot;&gt;配件选购&lt;/h2&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;5V 2A电源（RADXA在负荷量较大的情况下，需要5V2A才能正常工作）&lt;/li&gt;
+  &lt;li&gt;USB to TTL串口调试线 &lt;/li&gt;
+  &lt;li&gt;双头HDMI显示高清线&lt;/li&gt;
+  &lt;li&gt;音频视频AV连接线&lt;/li&gt;
+  &lt;li&gt;Mirco USB刷机线&lt;/li&gt;
+  &lt;li&gt;11键IR遥控器&lt;/li&gt;
+  &lt;li&gt;HDMI转VGA转接头&lt;/li&gt;
+  &lt;li&gt;带风扇散热器&lt;/li&gt;
+&lt;/ol&gt;
+</description>
+      </item>
+    
+      <item>
         <title>关于显示</title>
         <link>http://itfanr.github.io/radxa123/2014/12/31/radxa-rock-display.html</link>
         <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/31/radxa-rock-display.html</guid>
@@ -162,6 +267,43 @@ fbset -a -xres 1920 -yres 1080 -vxres 1920 -vyres 1080
       </item>
     
       <item>
+        <title>如何进入recovery 模式</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/31/enter-recovery-mode.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/31/enter-recovery-mode.html</guid>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;只需要4步&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;断开电源&lt;/li&gt;
+  &lt;li&gt;拔掉USB线&lt;/li&gt;
+  &lt;li&gt;长按recovery键&lt;/li&gt;
+  &lt;li&gt;插入usb线到otg口&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;此时如何连接有刷机工具（RKBatchTool.exe， RKAndroidTool 或者linux下工具 ） 工具会自动识别设备&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://cn.radxa.com/data/attachment/forum/201412/10/115141iab5zgauntihlb0a.jpeg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+</description>
+      </item>
+    
+      <item>
+        <title>Radxa Rock Lite 的相关资源</title>
+        <link>http://itfanr.github.io/radxa123/2014/12/31/Radxa-Rock-Lite-docs.html</link>
+        <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/31/Radxa-Rock-Lite-docs.html</guid>
+        <pubDate>Wed, 31 Dec 2014 00:00:00 +0800</pubDate>
+        <description>&lt;p&gt;由于rock lite 没有nand,需要从sd卡启动, rock lite的固件下载地址为:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://dl.radxa.com/rock_lite/images/android/
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;使用说明参考目录下面的readme.doc 文档 :&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;http://dl.radxa.com/rock_lite/images/android/readme.doc
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+      </item>
+    
+      <item>
         <title>各种资源和社区</title>
         <link>http://itfanr.github.io/radxa123/2014/12/29/resources-and-community.html</link>
         <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/resources-and-community.html</guid>
@@ -178,7 +320,7 @@ fbset -a -xres 1920 -yres 1080 -vxres 1920 -vyres 1080
     &lt;p&gt;&lt;a href=&quot;http://cn.radxa.com/&quot;&gt;中文论坛cn.radxa.com&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://talk.radxa.com/&quot;&gt;Radxa Talk&lt;/a&gt; &lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://talk.radxa.com/&quot;&gt;英文论坛Radxa Talk&lt;/a&gt; &lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;a href=&quot;https://plus.google.com/
@@ -194,7 +336,11 @@ communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;
     &lt;p&gt;&lt;a href=&quot;http://webchat.freenode.net/?channels=radxa&quot;&gt;IRC channel on Freenode&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;a href=&quot;http://radxa.com/Rock/download&quot;&gt;下载 &lt;/a&gt;  源码、镜像、工具、原理图&lt;/p&gt;
+    &lt;p&gt;&lt;a href=&quot;http://wiki.radxa.com/Rock&quot;&gt;Radxa wiki&lt;/a&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;a href=&quot;http://radxa.com/Rock/download&quot;&gt;下载源码、镜像、工具、原理图&lt;br /&gt;
+&lt;/a&gt;  &lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -261,7 +407,7 @@ communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;
   &lt;p&gt;随着产品的发布和更新，radxa产品越来越多。看看它们的区别吧。&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;##radxa rock 、radxa rock lite和 radxa rock pro三者的区别&lt;/p&gt;
+&lt;h2 id=&quot;radxa-rock-radxa-rock-lite-radxa-rock-pro&quot;&gt;radxa rock 、radxa rock lite和 radxa rock pro三者的区别&lt;/h2&gt;
 
 &lt;p&gt;主要的区别是：&lt;/p&gt;
 
@@ -279,6 +425,26 @@ communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;
     &lt;p&gt;radxa rock lite(2013): 1GB ram, 4GB nand flash, wifi only&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
+
+&lt;h2 id=&quot;rock-prorock&quot;&gt;Rock pro与Rock的区别：&lt;/h2&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;增加LVDS接口（FPC接口位于主板底部）&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;增加触控面板接口&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;增加连接摄像模块的CSI接口&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;主板多了扬声器驱动电路&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;其余和Rock保持一致&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 </description>
       </item>
     
@@ -287,7 +453,48 @@ communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;
         <link>http://itfanr.github.io/radxa123/2014/12/29/Q-and-A.html</link>
         <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/29/Q-and-A.html</guid>
         <pubDate>Mon, 29 Dec 2014 00:00:00 +0800</pubDate>
-        <description>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;自问自答中。。。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;1、lubuntu 镜像的密码是什么&lt;/p&gt;
+
+&lt;p&gt;用户名 rock，密码rock &lt;br /&gt;
+用户名 root    密码root&lt;/p&gt;
+
+&lt;p&gt;2、系统不停重启&lt;/p&gt;
+
+&lt;p&gt;系统需要用5V/2A的电源供电,  单独用usb线供电&lt;/p&gt;
+
+&lt;p&gt;3、突然上电之后 绿色的灯不亮了 网口的绿色灯也不亮了 只有红色的指示灯，是系统没有启动吗？&lt;/p&gt;
+
+&lt;p&gt;这种问题有几种可能：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;是不是刷错了固件. 具体请看 “固件命名原则”的帖子&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;recovery键是不是被外壳压着了&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;4、linux下，接上显示器以后桌面显示不全，怎么办？&lt;/p&gt;
+
+&lt;p&gt;RR的默认HDMI输出是1080p，可更换更高分辨率的显示器或设置分辨率&lt;/p&gt;
+
+&lt;p&gt;5、LED怎么控制？&lt;/p&gt;
+
+&lt;p&gt;在linux下的c、python、shell的设置方法，详见http://wiki.radxa.com/Rock/led&lt;/p&gt;
+
+&lt;p&gt;6、两个扩展口都代表什么，编号是多少？&lt;/p&gt;
+
+&lt;p&gt;扩展口资料，详见http://wiki.radxa.com/Rock/extension_header &lt;/p&gt;
+
+&lt;p&gt;7、Android的源码哪里下载？&lt;/p&gt;
+
+&lt;p&gt;http://wiki.radxa.com/Rock/Android_Build#Get_the_source_code &lt;/p&gt;
+
 </description>
       </item>
     
@@ -318,7 +525,174 @@ communities/114007636590240429960&quot;&gt;Radxa Google Plus community&lt;/a&gt;
         <link>http://itfanr.github.io/radxa123/2014/12/28/Flash-the-image-to-NAND.html</link>
         <guid isPermaLink="true">http://itfanr.github.io/radxa123/2014/12/28/Flash-the-image-to-NAND.html</guid>
         <pubDate>Sun, 28 Dec 2014 00:00:00 +0800</pubDate>
-        <description>
+        <description>&lt;blockquote&gt;
+  &lt;p&gt;这篇文章描述了如何在Radxa Rock的nand flash上安装镜像，比如，如何烧写开发板。你可以选择烧写整个nand镜像（比如update.img）到开发板或者仅仅烧写选定的分区。你可以从我们的服务器下载prebuilt镜像或者编译你自己的镜像。&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;section&quot;&gt;在你开始之前&lt;/h2&gt;
+
+&lt;p&gt;记住：&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;你可以一直烧写rock，它不会变成板砖，除非一些硬件损坏了。
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;烧写开发板你需要做的是：&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Radxa Rock(检查硬件版本，有Pro 和Full/Lite版，固件是不同的)&lt;/li&gt;
+  &lt;li&gt;一台电脑windows(win xp 32/64bit,win7 32//64bit或者linux 32/64bit)&lt;/li&gt;
+  &lt;li&gt;一个micro USB线-一端插在Radxa Rock的OTG口，另一端插在PC的USB口&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2 id=&quot;windows&quot;&gt;windows平台&lt;/h2&gt;
+
+&lt;p&gt;烧写镜像的Windows工具由Rockchip提供。为了烧写&lt;a href=&quot;http://radxa.com/Rock/update.img&quot;&gt;update.img&lt;/a&gt;（你最好点击链接然后读这个页面，这对初学者很重要），你需要使用RKBath Tool然后烧写到分区，你需要使用RKDevelop Tool。RKBath Tool和RKDevelop Tool依赖于RK USB驱动，所以你需要首先安装一下：&lt;/p&gt;
+
+&lt;h3 id=&quot;section-1&quot;&gt;安装驱动&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用RKDriver Assistant tools-这是简单的方式（仅支持winxp,Vista,win7，不支持 win8）&lt;/li&gt;
+  &lt;li&gt;手动安装（支持winxp,vista,win7,win8）&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;如果你已经安装了USB驱动，请跳过这一步。&lt;/p&gt;
+
+&lt;h4 id=&quot;ardkriver-assistant-tools&quot;&gt;a.使用RDKriver Assistant tools&lt;/h4&gt;
+
+&lt;p&gt;注意：这个方式仅支持winxp,vista,win7,不支持win8。&lt;/p&gt;
+
+&lt;p&gt;在这个过程中仅仅下载和解压&lt;a href=&quot;http://dl.radxa.com/rock/tools/windows/RK_DriverAssitant.zip&quot;&gt;RKDriverAssistant.zip&lt;/a&gt;，没必要连接你的Rockchip设备。然后双击 DriverInstall.exe 启动安装。如果你已经事先已经安装过了Rockchip USB 驱动，请先确保你卸载了。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/b/ba/RK_Driver_Assistant_Install_Uninstall.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击“Install Driver”。当驱动安装完了，然后关掉Radxa开发板，然后连接Radxa Rock到你的电脑，让开发板进入&lt;a href=&quot;http://radxa.com/Rock/Loader_mode&quot;&gt;loder 模式&lt;/a&gt;，然后你的电脑会检测开发板，你会看到它在设备管理器里面了：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/2/2a/RK_Driver_Assistant_Install_Usb_driver.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;这时，驱动应该已经成功安装了，恭喜你！&lt;/p&gt;
+
+&lt;h4 id=&quot;b&quot;&gt;b.手动安装&lt;/h4&gt;
+
+&lt;p&gt;先下载驱动。如果你使用winxp,win7系统，从这里下载&lt;a href=&quot;http://dl.radxa.com/rock/tools/windows/usb_driver_v3.5.zip&quot;&gt;usb_driver_v3.5.zip&lt;/a&gt;。 win8系统呢，从这里下载&lt;a href=&quot;http://dl.radxa.com/rock/tools/windows/Rockusb%20Driver%20v3.7.zip&quot;&gt;usb_driver_v3.7.zip&lt;/a&gt;。关闭Radxa Rock开发板，然后连接Radxa Rock到电脑，让开发板进入到loder模式。在你的电脑检测到开发板后，你会看到设备管理器是这样的：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/4/44/Flash_image_1.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择未识别的设备，右击，然后选择“更新软件驱动”。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/a/a5/Flash_image_2.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择“浏览电脑查找驱动”&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/4/43/Flash_image_2.5.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;找到你解压好的驱动文件（usb_driver_v3.5.zip），然后选择32/64位文件夹，然后点击“确定”安装。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/e/e9/Flash_image_3.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;当驱动正确安装了，你会在设备管理器看到Rock USB设备。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/6/66/Flash_image_6.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;驱动搞定了！&lt;/p&gt;
+
+&lt;h3 id=&quot;section-2&quot;&gt;烧写镜像&lt;/h3&gt;
+
+&lt;p&gt;有两种方法烧写镜像：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;使用RKBatch Tool（工厂更新固件工具，只烧写update.img，它会擦出所有的东西）&lt;/li&gt;
+  &lt;li&gt;使用RKAndroid Tool(开发工具，可以烧写分区)&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h4 id=&quot;rkbatch-toolupdateimg&quot;&gt;使用RKBatch Tool来烧写update.img&lt;/h4&gt;
+
+&lt;p&gt;从&lt;a href=&quot;http://dl.radxa.com/rock/tools/windows/RK_BatchTool_V1.7.zip&quot;&gt;这里&lt;/a&gt;下载RKbatch Tool。解压并运行RKBatch Tool.exe，你会看到下面的界面：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/1/18/Flash_image_7.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;选择镜像（rockdev/update.img)。可以查看&lt;a href=&quot;http://radxa.com/Rock/update.img&quot;&gt;这里&lt;/a&gt;来看如何制作nand 镜像。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/c/ca/Flash_image_8.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;关闭Radxa Rock开发板，然后将它连接到电脑上，让开发板进入loder模式，此时程序应该检测到了设备。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/5/59/Flash_image_9.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;点击“Update”按钮开始烧写，当烧写结束，你应该看到下面的界面：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/9/9a/Flash_image_10.jpg&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果烧写中断，它会导致update.img出现错误，你可以重新操作以上步骤或者重新制作update.img。&lt;/p&gt;
+
+&lt;h4 id=&quot;rkandroid-tool&quot;&gt;使用RKAndroid Tool来烧写到分区&lt;/h4&gt;
+
+&lt;p&gt;从&lt;a href=&quot;http://dl.radxa.com/rock/tools/windows/RKDevelopTool_v1.37.zip&quot;&gt;这里&lt;/a&gt;下载RKAndroid Tool。解压，然后运行RKAndroidTool.exe，你会看到：&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/2/28/Rkandroidtool_flash_image_1.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;关闭Radxa Rock开发板，然后将它连接到电脑上，让开发板进入loder模式，此时程序应该检测到了设备。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/6/6d/Rkandroidtool_flash_image_2.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;有八个选择可以选，所以选择正确的行，然后选中行左侧的复选框。然后你必须点击右侧的列来选择你要烧写的文件。你可以选择一个或者多个文件，然后一次性烧写进去。最终，点击“Run”来开始烧写。&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;http://radxa.com/mw/images/c/ce/Rkandroidtool_flash_image_3.png&quot; alt=&quot;image&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;如果成功了开发板会从电脑断开，然后启动系统。&lt;/p&gt;
+
+&lt;p&gt;请注意：&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;当你通过&lt;code&gt;./mkimage.sh ota&lt;/code&gt;命令打包镜像，内核会在boot.img里面，你应该看&lt;a href=&quot;http://radxa.com/Rock/Android_Build&quot;&gt;Rock/Android_Build &lt;/a&gt;得到更多信息。&lt;/li&gt;
+  &lt;li&gt;你可以按照需求一次性烧写一个或多个镜像。&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;section-3&quot;&gt;常见问题&lt;/h3&gt;
+
+&lt;h4 id=&quot;recovery-rkbatchtool-&quot;&gt;问题1:  recovery模式下 RKBatchTool 检测不到开发板&lt;/h4&gt;
+
+&lt;p&gt;情景1：&lt;/p&gt;
+
+&lt;p&gt;我已经手动安装了驱动，并且Recovery模式的USB为PID_310B，“Rockusb device”驱动在Vista上安装成功了，但是RKBatchTool连接不到RK3188的板子，导致无法烧写镜像。&lt;/p&gt;
+
+&lt;p&gt;解决办法:&lt;/p&gt;
+
+&lt;p&gt;RK3188板通过USB3.0 PMMCIA卡连接到笔记本电脑。这是一个USB2.0到USB3.0的兼容性问题，所以USB3.0端口换成USB 2.0端口，然后RKBatchTool应该可以连接到RK3188板子来烧写镜像了。&lt;/p&gt;
+
+&lt;p&gt;说明:&lt;br /&gt;
+1.Recovery 模式 : USB 设备硬件:  VID_2207&amp;amp;PID_310&lt;/p&gt;
+
+&lt;p&gt;2.引导进Android:  USB 设备硬件: VID_2207&amp;amp;PID_0006&lt;/p&gt;
+
+&lt;p&gt;情景2：&lt;/p&gt;
+
+&lt;p&gt;驱动安装正常，PC可以识别到设备，确定进入了recovery模式，但是一直BatchTool一直无法识别设备。&lt;/p&gt;
+
+&lt;p&gt;原因分析：使用了自己从网上下载的刷机工具，比如BatchTool 1.5.&lt;/p&gt;
+
+&lt;p&gt;解决办法：使用教程中指定的BatchTool工具&lt;/p&gt;
+
+&lt;h4 id=&quot;section-4&quot;&gt;问题2: 烧写失败&lt;/h4&gt;
+&lt;p&gt;情景1：烧写后，串口打印：&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+DDR Version 1.04 20130517 In DDR3 300MHz Bus Width=32 Col=10 Bank=8 Row=15 CS=2 Die Bus-Width=16 Size=2048MB Memory OK OUT BUILD=====6 SdmmcInit=0 20 F:32 1061 0 0 40 FlashReadRetry error!!,row = fff000 FlashReadRetry error!!,row = fff000   
+&lt;/code&gt;&lt;br /&gt;
+同时无法引导。&lt;/p&gt;
+
+&lt;p&gt;解决办法:&lt;/p&gt;
+
+&lt;p&gt;如果烧写失败，尝试在烧写前格式化NandFlash。&lt;/p&gt;
+
+&lt;p&gt;RKAndroidTool - 单击 “Erease IDB”按钮，格式化NandFlash。&lt;br /&gt;
+RKBatchTool    - 单击 “Restore”按钮格式化，然后烧写镜像。&lt;/p&gt;
+
+&lt;p&gt;情景2: 刷机的时候 遇到 Preparing IDB failed&lt;br /&gt;
+这有两种情况 &lt;/p&gt;
+
+&lt;p&gt;1）USB线供电不足，此时建议更换质量好的USB线 或者在进入刷机模式后插上电源&lt;/p&gt;
+
+&lt;p&gt;2 ) bootloader 版本不同导致，如果你之前刷的固件的bootloader版本是高版本，然后刷回低版本的固件，那么你可能会遇到这个问题。板子这是“变砖”了。。。按照这个 http://wiki.radxa.com/Rock/unbrick 解决它。&lt;/p&gt;
 </description>
       </item>
     
