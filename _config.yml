@@ -1,4 +1,4 @@
-baseurl: /radxa123
+baseurl: /docs
 permalink: /:year/:month/:day/:title.html
 paginate: 10
 markdown: kramdown
@@ -8,25 +8,25 @@ kramdown:
 
 # 作者信息
 author: 
-  name: itfanr
-  email: bjq1016@126.com
-  link: http://my.oschina.net/itfanr
-  weibo: http://weibo.com/itfan
-  github: http://github.com/itfanr
+  name: radxa team
+  email: support@radxa.com
+  link: http://radxa.com
+  weibo: http://weibo.com/radxa
+  github: http://github.com/radxa
 
 # 站点信息
-title: radxa入门汇总
-description: raxda开发板的相关资料等汇总
-url: http://itfanr.github.io/radxa123
-rss_url: radxa123/pages/atom.xml
+title: Getting started with radxa
+description: Documents about radxa products
+url: http://radxa.github.io/docs
+rss_url: docs/pages/atom.xml
 
 # gavatar头像及Favicon
-gavatar: http://itfanr.qiniudn.com/2014-12-28-gavatar.jpg
-favicon: http://itfanr.qiniudn.com/2014-12-28-favicon.ico
+gavatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
+favicon: 
 
 # disqus 设置
 disqus:
-  shortname: radxa123
+  shortname: radxa
 
 # 主题设置，自动激活某个标签
 active: 入门
