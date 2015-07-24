@@ -37,9 +37,9 @@ update.img是一个包含了所有需要部分的升级镜像。也就是说，�
 
 下面会有一些关于Radxa Rock固件组成的介绍，如果你不感兴趣，或者看不太明白，没关系，可以直接去下面两个链接，学习编译固件的步骤
 
-[Linux固件编译](/2015/07/17/build-Linux-firework.html)
+[Linux固件编译][1]  
 
-[android固件编译](/2015/07/17/build-android-firework.html)
+[android固件编译][2]
 
 
 #### Linux固件    
@@ -74,6 +74,9 @@ Android是一个基于Linux内核的系统，所以相比于Linux固件，Androi
 
 
 
+
+[1]:/2015/07/17/build-linux-image.html
+[2]:/2015/07/17/build-android-source-code.html
 
 --------------------------------------------------------------------
 * 如果需要更详细更全面的信息，请登陆  

@@ -89,7 +89,7 @@ description:
 
 ![image](http://radxa.com/mw/images/c/ca/Flash_image_8.jpg)
 
-关闭Radxa Rock开发板，然后将它连接到电脑上，让开发板进入loder模式，此时程序应该检测到了设备。
+关闭Radxa Rock开发板，然后将它连接到电脑上，让开发板进入[loder模式][1]，此时程序应该检测到了设备。
 
 ![image](http://radxa.com/mw/images/5/59/Flash_image_9.jpg)
 
@@ -169,7 +169,7 @@ RKBatchTool    - 单击 “Restore”按钮格式化，然后烧写镜像。
 2 ) bootloader 版本不同导致，如果你之前刷的固件的bootloader版本是高版本，然后刷回低版本的固件，那么你可能会遇到这个问题。板子这是“变砖”了。。。按照这个 [解砖](/2015/07/20/umbrick-rock.html) 解决它。
 
 
-
+[1]:/2014/12/31/enter-recovery-mode.html  
 
 
 --------------------------------------------------------------------
