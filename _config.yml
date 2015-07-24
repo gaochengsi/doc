@@ -1,46 +1,31 @@
-baseurl: /docs
 permalink: /:year/:month/:day/:title.html
-paginate: 10
 markdown: kramdown
+pygments: true
 
 kramdown:
   input: GFM
 
 # 作者信息
 author: 
-  name: radxa team
+  name: 瑞莎科技-Radxa
   email: support@radxa.com
-  link: http://radxa.com
-  weibo: http://weibo.com/radxa
+  weibo: weibo.com/radxa
   github: http://github.com/radxa
 
 # 站点信息
-title: Getting started with radxa
-description: Documents about radxa products
-url: http://radxa.github.io/docs
-rss_url: docs/pages/atom.xml
+title: Rock文档
+description: 文档资料
+rss_url: /pages/atom.xml
 
-# gavatar头像及Favicon
-gavatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
+# avatar头像及Favicon
+avatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
 favicon: 
+
+# google analytics 设置
+ga:
+  id: UA-54767140-1
+  url: docs.radxa.us
 
 # disqus 设置
 disqus:
-  shortname: radxa
-
-# 主题设置，自动激活某个标签
-active: 入门
-
-# 首页除了最新文章外显示分类
-cates: 
-  - 入门
-  - 问答 
-
-
-# 中文本地化
-locals:
-  tags: 标签
-  about: 关于
-  newest: 最新文章
-  archive: 归档
-  content: 目录
+  shortname: radxa-doc
