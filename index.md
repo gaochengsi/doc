@@ -7,7 +7,7 @@ title: Welcome to Radxa Documents
 
 如果你是刚接触Radxa Rock的朋友，建议先看一看下面的几篇文档，我相信，会很有帮助的。
 
-* [也许你应该会想要知道，你手上的是一个什么好东西](http://kevinxiasx.github.io/2014/12/29/products.html)
+* [也许你应该会想要知道，你手上的是一个什么好东西](http://docs.radxa.us/2014/12/29/products.html)
 
 * [先要确定你的开发板是哪个版本](http://kevinxiasx.github.io/2015/07/21/product-history.html)  
 
