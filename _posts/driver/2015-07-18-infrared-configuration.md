@@ -19,19 +19,19 @@ description:
 
 * 增加一个数组  
 
-  > 		static struct rkxx_remote_key_table remote_key_table_41C8[] = {  
-	               {0x38, KEY_VOLUMEUP},  
-	               {0xb8, KEY_VOLUMEDOWN},  
-	               {0x58, KEY_MENU},  
-	               {0xd0, KEY_REPLY},  
-	               {0x48, KEY_BACK},  
-	               {0x98, KEY_BACK},  
-	               {0x50, KEY_UP},  
-	               {0x30, KEY_DOWN},  
-	               {0xc8, KEY_LEFT},  
-	               {0xc0, KEY_RIGHT},  
-	              {0x40, KEY_REPLY},  
-	              {0x80, KEY_SEARCH},   
+	static struct rkxx_remote_key_table remote_key_table_41C8[] = {  
+		{0x38, KEY_VOLUMEUP},  
+		{0xb8, KEY_VOLUMEDOWN},  
+		{0x58, KEY_MENU},  
+		{0xd0, KEY_REPLY},  
+		{0x48, KEY_BACK},  
+		{0x98, KEY_BACK},  
+		{0x50, KEY_UP},  
+		{0x30, KEY_DOWN},  
+		{0xc8, KEY_LEFT},  
+		{0xc0, KEY_RIGHT},  
+		{0x40, KEY_REPLY},  
+		{0x80, KEY_SEARCH},   
 	};  
 
 该数组将红外键值ircode映射为Linux标准键盘扫描码scancode  
@@ -98,23 +98,3 @@ description:
 
 **从log中获得的键值是16进制的,前两位是我们需要的,后面的是前两位的反码,用于校验,直接忽略.
 不要留太多的log,获得用户码和键值后把log关闭,否能可能导致遥控器无法使用**  
-
-
-
---------------------------------------------------------------------
-* 如果需要更详细更全面的信息，请登陆  
-	http://radxa.com  						官方网站  
-	339567728         						QQ讨论群  
-	http://cn.radxa.com/forum.php					中文论坛  
-* 另外，本手册所使用的所有源码、固件、工具，都可以登陆以下地址下载  
-	http://dl.radxa.com/                             	      国外服务器  
-	http://pan.baidu.com/share/home?uk=3108273493#category/type=0	 百度云  
-* 手册内容经小编实际操作，均可正常使用，但因系统以及整理文档等原因，若出现错误，请谅解，并使用以下邮箱联系我们  
-	kevin@radxa.com  
-
-## Radxa团队  
-
-### 2015年7月  
---------------------------------------------------------------------
-
-

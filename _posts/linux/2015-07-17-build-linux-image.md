@@ -16,12 +16,12 @@ description:
 #### 下载交叉编译工具链  
 
 ##### 64bit 主机  
-  `git clone -b kitkat-release --depth  https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
+  `git clone -b kitkat-release --depth=1  https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
   
 或者这里下载http://dl.radxa.com/rock/source/x86_64_arm-eabi-4.6.zip   
 
 ##### 32bit 主机  
-  `git clone -b jb-release --depth 1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
+  `git clone -b jb-release --depth=1 https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.6`  
   
 或者在这里下载http://dl.radxa.com/rock/source/x86_32_arm-eabi-4.6.zip  
 
@@ -130,26 +130,3 @@ description:
   `./mkupdate.sh `  
   
 即得到可烧录的updata.img镜像。  
-
-=
-
-=
-
-
---------------------------------------------------------------------
-* 如果需要更详细更全面的信息，请登陆  
-	http://radxa.com  						官方网站  
-	339567728         						QQ讨论群  
-	http://cn.radxa.com/forum.php					中文论坛  
-* 另外，本手册所使用的所有源码、固件、工具，都可以登陆以下地址下载  
-	http://dl.radxa.com/                             	      国外服务器  
-	http://pan.baidu.com/share/home?uk=3108273493#category/type=0	 百度云  
-* 手册内容经小编实际操作，均可正常使用，但因系统以及整理文档等原因，若出现错误，请谅解，并使用以下邮箱联系我们  
-	kevin@radxa.com  
-
-## Radxa团队  
-
-### 2015年7月  
---------------------------------------------------------------------
-
-

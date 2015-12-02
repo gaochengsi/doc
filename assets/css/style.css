@@ -392,7 +392,8 @@ a {
       margin: 0 auto; } }
 
 h1, h2, h3, h4, h5, h6 {
-  font-weight: 400; }
+  font-weight: bold; 
+}
 
 #post__title {
   margin: 0;
@@ -925,7 +926,7 @@ iframe {
 
 pre {
   padding: 1em;
-  font: .9em/1.5 Consolas, Monaco, 'Andale Mono', monospace;
+  font: .9em/1.5 Consolas,"Liberation Mono",Menlo,Courier,monospace;
   border: 1px solid #e5e8ec;
   border-radius: 3px;
   background-color: #fdfdfd;
@@ -1243,3 +1244,8 @@ pre > code {
   color: #2aa198; }
 
 /* Literal.Number.Integer.Long */
+
+#contact{
+  border: 2px solid black;
+  border-radius: 5px;
+}
