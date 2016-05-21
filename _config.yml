@@ -23,7 +23,7 @@ favicon:
 # google analytics 设置
 ga:
   id: UA-54767140-1
-  url: http://gaochengsi.github.io/docs
+  url:gaochengsi.github.io
 
 # disqus 设置
 disqus:
