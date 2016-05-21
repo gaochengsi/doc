@@ -1,3 +1,4 @@
+baseurl: /doc
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 pygments: true
