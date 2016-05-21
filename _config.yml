@@ -1,4 +1,3 @@
-baseurl: /docs
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
 pygments: true
@@ -24,7 +23,7 @@ favicon:
 # google analytics 设置
 ga:
   id: UA-54767140-1
-  url: gaochengsi.github.io/docs
+  url: embeddedmakerlab.me
 
 # disqus 设置
 disqus:
