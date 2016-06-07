@@ -19,7 +19,7 @@ rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
 avatar: http://dl.radxa.com/media/logo/RADXA_X_135x135.png
-favicon: 
+#favicon: 
 # google analytics 设置
 #ga:
   #id: UA-54767140-1
