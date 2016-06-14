@@ -1,1 +1,1 @@
-*[模板来自radxa/docs](https://github.com/radxa/docs)
+* [模板来自radxa/docs](https://github.com/radxa/docs)
