@@ -12,11 +12,11 @@ description:
 从Android 4.4起，Rockchip提供了一个在Linux系统下的升级工具（闭源）。叫做“upgrade_tool”。 它支持烧写update.img、parameter、bootloader和其他分区，注意它是基于命令行的工具。 
 
 
-* 下载工具  
+## 下载工具  
 
 从[这里][2]下载Rockchip的Linux升级工具并解压，然后你会得到一个在Linux下二进制可执行文件，叫做“upgrade_tool”。 
 
-* 让板子进入[Loader模式][1]，并运行命令烧写升级包updata.img
+#  让板子进入[Loader模式][1]，并运行命令烧写升级包updata.img
 
 `sudo ./upgrade_tool uf  /path/to/update.img`      #(UF Upgrade Flash)
 	
