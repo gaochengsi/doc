@@ -16,5 +16,5 @@ title: 个人博客
 
 [1]: http://jekyll.bootcss.com/
 [2]: https://github.com/radxa/docs
-[2]: https://github.com/gaochengsi/gaochengsi.github.i o 
+[2]: https://github.com/gaochengsi/gaochengsi.github.io 
 [3]: https://github.com/suyan/suyan.github.io
