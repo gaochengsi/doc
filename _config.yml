@@ -1,6 +1,6 @@
 permalink: /:year/:month/:day/:title.html
 markdown: kramdown
-pygments: true
+rouge: true
 
 kramdown:
   input: GFM
@@ -16,11 +16,11 @@ kramdown:
 title: Chengsi的个人空间
 description: 文档资料
 #url: http://gaochengsi.github.io/docs
-rss_url: pages/atom.xml
+rss_url: /pages/atom.xml
 
 # avatar头像及Favicon
-avatar: public/img/face.png
-favicon: public/img/face.png
+avatar: /public/img/face.png
+favicon: /public/img/face.png
 # google analytics 设置
 #ga:
   #id: UA-54767140-1
