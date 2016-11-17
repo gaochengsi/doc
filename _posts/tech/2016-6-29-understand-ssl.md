@@ -1,7 +1,7 @@
 ---
 layout: post
 title: SSL协议详解
-category: 技术
+category: 信息安全
 tags: SSL
 description: 关于SSL的一个理解，主要是了解他的证书认证过程
 ---
