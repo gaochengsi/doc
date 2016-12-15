@@ -8,8 +8,7 @@ kramdown:
 # 作者信息
   author: chengsi
   name: chengsi
-  #email: support@radxa.com
-  #weibo: weibo.com/radxa
+  email: gaochengsiwork@gmail.com
   github: http://github.com/gaochengsi
 
 # 站点信息
@@ -22,8 +21,8 @@ rss_url: /pages/atom.xml
 avatar: /public/img/face.png
 favicon: /public/img/face.png
 # google analytics 设置
-#ga:
-  #id: UA-54767140-1
+ga:
+  id: UA-89021135-1
 
 
 # disqus 设置
