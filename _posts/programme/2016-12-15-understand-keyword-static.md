@@ -2,7 +2,7 @@
 layout: post
 title: 理解static关键字
 category: 编程
-tags: 编程，静态
+tags: 编程，静态，static
 description: 理解static关键字在编程中的作用。
 ---
 >总结下static关键字在常见语言中的作用。
