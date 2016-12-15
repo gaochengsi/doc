@@ -10,6 +10,7 @@ description: 理解static关键字在编程中的作用。
 ## C语言
 ### 1.static使的函数内部的局部变量的值持久化，也就是说当再一次调用该函数时，该变量的值会是上一次调动该函数退出时的值(仍是局部变量)。
 example：
+
 ```c
 #include <stdio.h>
 void foo()
@@ -29,6 +30,7 @@ int main()
 }
 ```
 result:
+
 ```c
 a = 15, sa = 15
 a = 15, sa = 20
