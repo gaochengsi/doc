@@ -1,11 +1,11 @@
 ---
 layout: post
-title: An In-Depth Look into the Win32 Portable Executable File Format
+title: 深入剖析Win32可移植可执行文件格式第一部分（原文：An In-Depth Look into the Win32 Portable Executable File Format）
 category: 操作系统
 tags: PE，Win32，exe，dll
 description: PE文件介绍
 ---
->对原文的一个翻译，[原文地址](https://msdn.microsoft.com/en-us/magazine/bb985992.aspx)，其中有些翻译可能不是很准确，欢迎大家指正。
+>原文的一个翻译，译者：SmartTech。[原文地址](https://msdn.microsoft.com/en-us/magazine/bb985992.aspx)。
 
 作者:Matt Pietrek  
 本文假设你对C++和Win32平台熟悉
@@ -17,9 +17,15 @@ description: PE文件介绍
 
 
 ## 正文
-很久之前，在遥远的银河系，我为Microsoft Systems Journal (现在是MSDN® Magazine)写了我最早几篇文章中的一篇：["Peering Inside the PE: A Tour of the Win32 Portable Executable File Format,"](https://msdn.microsoft.com/en-us/magazine/ms809762.aspx),结果表民，这篇文章比我现象的更加受欢迎。至今，我任然能够从人们的口中听到）甚至在微软）在使用这篇文章，且它仍能从MSDN的数据库中获得。不幸的时，这篇文章的问题是它是一成不变的。Win32的世界在过去几年中已经改变了相当很多，但这个文章的却是严重过时的。从这个月开始，我将通过一篇两部分的文章来改善这个情况。
+很久以前,我开始为Microsoft Systems Journal(现在的MSDN® Magazine)写文章,其中有一篇名为“探索PE文件内幕——Win32 可移植可执行文件格式之旅”的文章很受欢迎,大大超出了我的意料。直到现在,我还听说有人（甚至在Microsoft）仍然在使用那篇文章,它依旧被 收录在MSDN Library中。不幸的是,文章的最大问题是它们是静止的。但是Win32®的世界在这些年已经发生了很大的变化,因此那篇文章已经严重过时了。我要从本月开始用两部分系列的文章 来补救这种情况。
 
-你或许会好奇你为什么应该关注可执行文件的格式。回答正如之前一样：操作系统的可执行文件格式和数据结构揭示了相当多的底层操作系统的信息。通过了解你的EXE和DLL文件中有什么，你将会发现你已经变成了一个更好的程序员。
+你可能想知道为什么要关注可执行文件的格式。答案永远是:操作系统的可执行文件格式和数据结构展现了操作系统内部许多信息。通过理解EXE和DLL的内部情况,你会发现你已经变成你周围一个更优秀的程序员。
+
+当然,通过阅读 Microsoft 的 PECOFF 规范你可以获得许多我将要告诉你的内容。但是与大多数规范一样,它更注重完整性而不是可读性。在本文中,我把精力集中于解释整个主题中最重要的部分,同时填补那些并不适合出现在官方规范中的怎么样（How）以及为什么（Why）的问题。另外,在本文中我还会讲到一些非常有用的内容,它们并未出现在任何 Microsoft 官方文档中。
+
+### 背景知识
+
+让我先举一些例子来说明自从1994年我写那篇文章以来有关可执行文件方面都发生了哪些变化。由于16位Windows®已经成为历史,因此没有必要再与Win16的NE（New Executable）格式相比较了。另一个已经脱离人们视野的是Win32s®。在 Windows 3.1 上运行Win32 程序非常不稳定是最令人讨厌的事。
 
 
 
