@@ -88,18 +88,18 @@ PE文件的节代表代码或某些类型的数据。虽然代码只能是代码
 节有两种对齐值,一种是在文件中的对齐值,另一种是在内存中的对齐值。PE文件头中指定了这两种值,它们可以不同。每个节的起始地址都是对齐值的倍数。例如在PE文件中,典型的对齐值是0x200。因此每个节的起始起始地址都是 0x200 的倍数。
 
 一旦映射进内存,节总是从页的边界开始。也就是说,当PE文件被映射进内存时,每个节的开头都对应于一个内存页的开始。在 x86 CPU 上,页按4KB对齐;在IA-64上,页按8KB对齐。以下是PEDUMP输出的Windows XP 中的 KERNEL32.DLL 的.text 节和.data 节的情况:  
-Section Table
-        01 .text     VirtSize: 00074658  VirtAddr:  00001000
-          raw data offs:   00000400  raw data size: 00074800
-......
-02 .data VirtSize: 000028CA VirtAddr: 00076000
-          raw data offs:   00074C00  raw data size: 00002400
+Section Table  
+        01 .text     VirtSize: 00074658  VirtAddr:  00001000  
+          raw data offs:   00000400  raw data size: 00074800  
+......  
+02 .data VirtSize: 000028CA VirtAddr: 00076000  
+          raw data offs:   00074C00  raw data size: 00002400  
 
 上面的输出表明,.text 节的文件偏移是 0x400,在内存中它比 KERNEL32 的加载地址高 0x1000 字节。同样,.data 节的文件偏移是 0x74C00,它在内存中比 KERNEL32 的加载地址高 0x76000 字节。
 
 可以创建一个PE文件,使它的节在文件中的偏移与在内存中的偏移相同。但这会使可执行文件相当大,不过可以提高它在 Windows 9x 或 Windows Me 中的加载速度。使用默认的/OPT:WIN98 链接器选项(由Visual Studio 6.0 引进)就可以创建这样的PE文件。在VisualStudio®.NET中,链接器可能使用也可能不使用这个选项,这取决于文件是不是足够小。
 
-链接器一个比较有趣的功能就是合并节。如果两个节属性相似、相互兼容时,它们通常会在链接时被合并成一个节。这是通过链接器的/MERGE 选项来完成的。例如以下的链接器选项会 把.rdata 节和.text 节组合成单个的.text 节:
+链接器一个比较有趣的功能就是合并节。如果两个节属性相似、相互兼容时,它们通常会在链接时被合并成一个节。这是通过链接器的/MERGE 选项来完成的。例如以下的链接器选项会 把.rdata 节和.text 节组合成单个的.text 节:  
 /MERGE:.rdata=.text
 
 把节合并起来的好处是可以节省在磁盘上和在内存中的空间。每个节至少要在内存中占用一个页面。如果你能将一个可执行文件中节的数目从四个减少到三个,你很可能就会少占用一页内存。当然,这取决于那两个被合并的节中未使用的空间加起来够不够一页。
@@ -112,7 +112,7 @@ Section Table
 
 在可执行文件中,许多地方都需要被指定一个在内存中的地址。例如在使用全局变量时需要它的地址。PE文件可以被加载到进程地址空间中的任何地方。虽然它有一个首选地址,但你却不能依赖可执行文件一定会被加载到那个地址。因此就需要按一定方式指定地址,使它们并不 依赖于可执行文件的加载地址。
 
-为了避免在 PE 文件中硬编码内存地址,因此就使用了 RVA。RVA 只是一个相对于PE文件在内存中的加载位置的偏移。例如假定一个EXE文件被加载在0x400000处,而它的代码节在0x401000处。那么这个代码节的 RVA 就是:
+为了避免在 PE 文件中硬编码内存地址,因此就使用了 RVA。RVA 只是一个相对于PE文件在内存中的加载位置的偏移。例如假定一个EXE文件被加载在0x400000处,而它的代码节在0x401000处。那么这个代码节的 RVA 就是:  
                (目标地址)0x401000 - (加载地址)0x400000 = (RVA)0x1000
 
 要把一个RVA转换成实际地址,只需要简单地逆着上述过程进行:将RVA与实际加载地址相加就能得到实际的内存地址。顺便说一下,按照 PE 格式中的说法,实际的内存地址被称为虚拟地址(Virtual Address,VA)。另外一种考虑VA的方式就是把它当成RVA加上首选加载地址。不要忘了我前面说过加载地址与HMODULE是一回事。
@@ -125,8 +125,8 @@ Section Table
 
 数据目录是一个有 16 个(WINNT.H 中定义为 IMAGE_NUMBEROF_DIRECTORY_ENTRIES)元素的结构数组。每个数组元素所指代的内容已经被预先定义好了。WINNT.H文件中的这些IMAGE_DIRECTORY_ENTRY_xxx定义就是数据目录的索引(从 0 到 15)。下表描述了每个IMAGE_DIRECTORY_ENTRY_xxx值所指代的内容。由它们指向的许多数据结构将在本文的第二部分中详细描述。
 
-　　　　　　　　　　    ![2016-12-16-2](/public/img/2016-12-16-introduction-2.png)
-　　　　　　　　　　    ![2016-12-16-3](/public/img/2016-12-16-introduction-3.png)
+　　　　　　　　　　    ![2016-12-16-2](/public/img/2016-12-16-introduction-2.png)  
+　　　　　　　　　　    ![2016-12-16-3](/public/img/2016-12-16-introduction-3.png)  
 　　　　　　　　　　    ![2016-12-16-4](/public/img/2016-12-16-introduction-4.png)
 
 ### 导入函数
@@ -150,10 +150,10 @@ CALL DWORD PTR [0x00405030]
 如果你不熟悉 x86 汇编语言,我可以告诉你这条指令表示通过函数指针来调用相应的函数。在地址0x00405030处的一个DWORD 类型的值就是CALL指令要将控制权转到的地方。在这个例子中,地址0x00405030在 IAT 中。
 
 调用导入函数的低效率方式类似下面这个样子:  
-CALL 0x0040100C
-     ...
-     0x0040100C:
-     JMP       DWORD PTR [0x00405030]
+CALL 0x0040100C  
+     ...  
+     0x0040100C:  
+     JMP       DWORD PTR [0x00405030]  
 
 在这种情况下,CALL 指令把控制权转到了一个小占位程序(stub)中。这个占位程序只是一条JMP指令,用以跳转到保存在地址 0x405030处的地址中。同样,记住0x405030 是 IAT 中的一个元素。一句话,调用 API的这种低效率方式使用了5个字节的附加代码(JMP指令是1字节,地址是4个字节),并且由于使用了额外的JMP 指令,因此执行时要花费更长的时间。
 
@@ -190,14 +190,57 @@ PE文件开头是传统的MS-DOS文件头,其中前面的一部分被称为IMAGE
 
 IMAGE_NT_HEADERS 结构是存储 PE 文件细节的主要位置。它的偏移由文件开头的IMAGE_DOS_HEADER 结构的e_lfanew域给出。实际有两种版本的IMAGE_NT_HEADER结构,一种供32位可执行文件使用,另一种供64位使用。它们之间的差别非常小,因此我在讨论中把它们看作相同的结构。区别这两种结构惟一正确的、由 Microsoft 官方认可的方法是通过 IMAGE_OPTION_HEADER 结构(很快就会讲到)的 Magic 域。  
 IMAGE_NT_HEADER 结构由三个域组成:    
-typedef struct _IMAGE_NT_HEADERS {
-    DWORD Signature;
-    IMAGE_FILE_HEADER FileHeader;
-    IMAGE_OPTIONAL_HEADER32 OptionalHeader;
-} IMAGE_NT_HEADERS32, *PIMAGE_NT_HEADERS32;   
+typedef struct _IMAGE_NT_HEADERS {  
+    DWORD Signature;  
+    IMAGE_FILE_HEADER FileHeader;  
+    IMAGE_OPTIONAL_HEADER32 OptionalHeader;  
+} IMAGE_NT_HEADERS32, *PIMAGE_NT_HEADERS32;     
 在一个合法的 PE 文件中,Signature 域被设置成 0x00004550。用ASCII码表示为“PE\0\0”。它被定义为IMAGE_NT_SIGNATURE。第二个域是一个类型为 IMAGE_FILE_HEADER 的结构,这个结 构在 PE 文件出现之前就已经出现了。它包含了关于文件的一些基本信息。最重要的是,其中有一个域指明了跟在这个结构后面的可选文件头的大小。在PE文件中,这个可选文件头是必须的,但它仍然被称为IMAGE_OPTIONAL_HEADER。
 
-下表列出了 IMAGE_FILE_HEADER 结构的各个域及相应的描述。这个结构也可以在 COFF 格式 的 OBJ 文件开头找到。
+下表列出了 IMAGE_FILE_HEADER 结构的各个域及相应的描述。这个结构也可以在 COFF 格式 的 OBJ 文件开头找到。  
+
+　　　　　　　　　　    ![2016-12-16-5](/public/img/2016-12-16-introduction-5.png)
+
+下表列出了常用的 IMAGE_FILE_xxx 值:  
+
+　　　　　　　　　　    ![2016-12-16-6](/public/img/2016-12-16-introduction-6.png)
+
+下表列出了 IMAGE_OPTIONAL_HEADER 结构的成员:  
+
+　　　　　　　　　　    ![2016-12-16-7](/public/img/2016-12-16-introduction-7.png)  
+　　　　　　　　　　    ![2016-12-16-8](/public/img/2016-12-16-introduction-8.png)  
+　　　　　　　　　　    ![2016-12-16-9](/public/img/2016-12-16-introduction-9.png)
+　　　　　　　　　　    ![2016-12-16-10](/public/img/2016-12-16-introduction-10.png)  
+
+IMAGE_OPTIONAL_HEADER 结构末尾的DataDirectory数组就像是可执行文件中重要位置的地址簿。DataDirectory的每个元素结构如下:  
+typedef struct _IMAGE_DATA_DIRECTORY {  
+DWORD VirtualAddress; // 数据的 RVA DWORD Size; // 数据的大小  
+} IMAGE_DATA_DIRECTORY, *PIMAGE_DATA_DIRECTORY;  
+
+### 节表
+
+紧跟着 IMAGE_NT_HEADERS 结构的是节表(section table)。节表是一个 IMAGE_SECTION_HEADER结构数组。此结构提供了与它相关的节的信息,其中包括位置、长度和属性。下表给出了对此结构的描述。节表中此结构的数目由 IMAGE_NT_HEADERS.FileHeader.NumberOfSections 给出。
+
+　　　　　　　　　　    ![2016-12-16-11](/public/img/2016-12-16-introduction-11.png)  
+　　　　　　　　　　    ![2016-12-16-12](/public/img/2016-12-16-introduction-12.png)
+
+
+下表列出了常用的节属性标志:  
+　
+　　　　　　　　　    ![2016-12-16-13](/public/img/2016-12-16-introduction-13.png)  
+　　　　　　　　　    ![2016-12-16-14](/public/img/2016-12-16-introduction-14.png)
+
+可执行文件中的节在文件中的对齐值对文件的大小有重要影响。在VisualStudio6.0中,链接器默认的节对齐值是 4KB,除非使用/OPT:NOWIN98 选项或/ALIGN 选项。对于 Visual Studio .NET链接器,虽然仍是默认使用/OPT:NOWIN98选项,但它要确定可执行文件是否小于某一固定值,如果小于的话,它将使用0x200字节的对齐值。
+
+另一个比较有用的对齐值来自.NET文件规范。这个规范说.NET可执行文件在内存中的对齐值应该为8KB,而不是 x86 上的 4KB。这是为了确保用x86入口点代码创建的.NET可执行文件可以运行在IA-64中。如果在内存中节的对齐值为 4KB,那么 IA-64 将不能加载这个文件,因为在 64 位 Windows 上页面是按 8KB 对齐的。
+
+### 总结
+这一部分主要讲了 PE 文件头。在本文的第二部分中,我会继续带领读者游历可执行文件中常见的节。然后讲一下这些节中主要的数据结构,其中包括导入表、导出表以及资源。最后我会讲一下最新的经过彻底改进的PEDUMP 工具的源代码。
+
+
+
+
+
 
 
 
