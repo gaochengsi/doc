@@ -5,7 +5,7 @@ category: 操作系统
 tags: PE，Win32，exe，dll
 description: PE文件介绍
 ---
->原文的一个翻译，译者：SmartTech。[原文地址](https://msdn.microsoft.com/en-us/magazine/bb985992.aspx)。
+>原文的一个翻译，译者：[SmartTech](http://www.pediy.com/kssd/pediy10/61499/430063/12569.pdf)。[原文地址](https://msdn.microsoft.com/en-us/magazine/bb985992.aspx)。
 
 作者:Matt Pietrek  
 本文假设你对C++和Win32平台熟悉，[PE.exe](http://download.microsoft.com/download/msdnmagazine/code/Feb02/WXP/EN-US/PE.exe)
