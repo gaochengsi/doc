@@ -99,6 +99,8 @@ GNU Radio采用了GPL 3.0（General Public License version 3.0），软件的版
 
 第一种要介绍的硬件当然是大名鼎鼎的USRP。USRP有Ettus Research（www.ettus.com)公司制造。这个公司是2004年有Matt Ettus从GNU Radio项目中独立出来之后创立的。Matt Ettus he和USRP1如图所示。
 
+　　　　　　　　　　　  ![2016-12-30-3](/public/img/2016-12-30-3.png)
+
 USRP是开源的，它的电路原理图、HDL代码和上位机代码都是开源的。于是国内一下子就出现了好几家复制USRP的公司，价格更便宜。2010年，Ettus公司被NI（National Instruments）收购，但仍然保持独立的品牌，并且继续保持开源的风格。USRP现在已经被广泛用在各种与无线通信相关的科研、教学、监控监测、军事和安全方面。
 
 USRP经过了十几年的发展，已经有多个产品系列，根据接口类型的不同，有：
@@ -115,7 +117,7 @@ Ettus research公司开发了一种软件工具，叫做RFNoc（RF Network on Ch
 
 另一个方向是“小型化”。Ettus Research在2015年9月发布了一款新的B系列USRP设备，是B200/210迷你版，尺寸如同名片大小，如图：
 
-　　　　　　　　　　　  ![2016-12-30-3](/public/img/2016-12-30-3.png)
+　　　　　　　　　　　  ![2016-12-30-4](/public/img/2016-12-30-4.png)
 
 B200mini与B200的功能完全相同，他的小身材使其非常便携，也很容易与主机设备集成在一起。GNU Radio正在研发Android版本，B200mini加一部安卓手机，配合GNU Radio安卓版本，就是一个最小的SDR系统。预计黑客们会非常喜欢这个迷你身材的小USRP。
 
@@ -129,7 +131,7 @@ USRP的驱动程序称为UHD（USRP Hardware Driver），它是一套独立的�
 
 除了USRP，另一种人气颇高的硬件要数RTL-SDR（http://www.rtl-sdr.com/）了， 如图所示。
 
-　　　　　　　　　　　  ![2016-12-30-4](/public/img/2016-12-30-4.png)
+　　　　　　　　　　　  ![2016-12-30-5](/public/img/2016-12-30-5.png)
 
 RTL-SDR是一种特别便宜的软件无线电硬件。它原本是一个基于RTL2832U芯片的DVB-TDongle，用来收看电视，俗称“电视棒”。后来发现这种芯片可以直接读取原始的I/Q数据，于是只要安装一个新的驱动程序，电视棒就可以用来作为宽带的软件无线电接收机。
 
@@ -149,7 +151,78 @@ RTL-SDR是一种特别便宜的软件无线电硬件。它原本是一个基于R
 |Fitipower FC0012      | 22~948.6MHz                       |
 |FCI FC2580            | 146~308MHz 和 438~924MHz           |
 
-可见，频率范围最宽的是Elonics E4000
+可见，频率范围最宽的是Elonics E4000。
+
+（2）RTL-SDR的采样率和ADC进度
+
+RTL2832U的ADC是8比特I/Q两路采样。理论上，最高的采样率是3.2M/s。然而，如果工作在这个采样率下，RTL—SDR会不太稳定，会丢失数据。因此，目前能达到的、无数据丢失的采样率是2.56MS/s。
+
+除了GNU Radio，RTL-SDR还支持很多其他的软件。大部分软件包都是以“librtlsdr”这个库为基础的。源代码位于：http://cgit.osmocom.org/rtl-sdr/ ，这套代码不仅包含库函数，还有一些命令行工具，例如rtl_test、rtl_sdr、rtl_tcp、rtl_fm。这些命令行工具可以用来测试RTL-SDR设备连接是否正常，还可以完成基本的信号采集功能。因为RTL-SDR使用USB接口与主机连接，所以librtlsdr库依赖于libusb库。
+
+### 3.3 HackRF
+
+HackRF是一种便宜、收发功能齐全的SDR硬件，如图：
+
+　　　　　　　　　　　  ![2016-12-30-6](/public/img/2016-12-30-6.png)
+
+说它是最便宜的，因为他只需要大约300美元；但它比起RTL-SDR贵，因为RTL-SDR只能接收，不能发射，而HackRF技能接收又能发射。所以，如果你想尝试一些既要接受又要发射的实验，那么成本更最低的选择就是HackRF了。
+
+2013年上半年，硬件黑客Michael Ossmann和他的小伙伴Jared Boone一起开发了HackRF这个低成本的SDR硬件。在2013年BlackHat和DEFCON大会上，他们在演讲中向大家介绍了这种硬件，而且同时在Kickstarter上发起了众筹，打算量产HackRF，只花了6个小时，钱就筹够了！这种硬件就这么火起来了。
+
+HackRF也是开源的，跟USRP类似，国内也有生产HackRF的团队。不同的是，HackRF是完全开源的软件无线电射频前端，从原理图到PCB图、从驱动程序到单片机固件，甚至连加工制版的工艺要求，全部以GPL协议无保留地发布，这对于我们学习研究软件无线电无疑是意见非常值得庆幸的事情。
+
+（1）HackRF支持的射频频段
+
+HackRF（https://gereatscottgadgets.com/hackrf/)支持1MHz~6GHz这么宽的频段。因为HackRF的开放性，他有一些其他版本，支持不同的频率范围。例如HackRF Blue（http://hackrfblue.com/ ），号称可以支持200KHz~7.2GHz（没有额外的上下变频器）。
+
+
+（2）HackRF的采样率和ADC/DAC精度
+
+HackRF的采样率最高可达20MS/s，8比特量化（8比特I路加上8比特Q路）。
+
+（3）主机接口类型
+
+HackRF使用USB2.0接口。
+
+### 3.3 bladeRF
+
+HackRF虽然能收也能发，但却是半双工的，也就是说，收发不能同时进行。baldeRF是一种全双工的SDR硬件（http://www.nuand.com )，如图：
+
+　　　　　　　　　　　  ![2016-12-30-7](/public/img/2016-12-30-7.png)
+
+bladeRF几乎是与HackRF同时出现的。2012年下半年，Robert Ghilduta带领Nuand团队开发了bladeRF的原型：2013年1月，在Kickstarter上发起了众筹，很快就在2月底就凑足了资金。bladeRF也在BlckHat和DEFCON会议上做了推广和销售，所以他也就是一开始就面向硬件黑客群体的。
+
+（1）bladeRF支持的射频频段  
+bladeRF可以支持3000MHz~3.8GHz。
+
+（2）ADC/DAC采样率和精度  
+采样率最高40MS/s。12比特量化。
+
+（3）主机接口类型  
+bladeRF使用USB3.0接口。
+
+从以上三项指标来看，除了射频范围，bladeRF的指标都超过了HackRF。bladeRF选择了USB3.0接口，可以支持更大的基带带宽。更重要的是，baldeRF是全双工的，因此可以支持OpenBTS这样的应用。
+
+bldeRf对多天线的支持也是不错的，通过同步时钟电缆连接多个bladeRF，可以支持2天线和4天线MIMO。bladeRF有两种型号：x40有一种容量略小的FPGA，40KLE；x115有一个容量较大的FPGA，115KLE Cyclone IV。与USRP类似，FPGA用来处理一些高运算量的任务。bladeRF上还配备了一个ARM处理器，使他可以脱离主机单独运行。
+
+在软件方面，bladeRF除了支持Linux系统，还可以支持Windows和Mac，特别是他可以支持MATLAB。
+
+总的来说，bladeRF更接近于USRP，像USRP的低成本版本，如果说USRP比较学术范，HackRF黑客范，那么bladeRF则是结余两者之间的类型。
+
+下表总结了这4款硬件的主要指标和价格，供读者参考。
+
+|           | RTL-SDR                   | HackRF One    | bladeRF x40                       | USRP                                  |
+|---------- |------------------------   |-------------- |---------------------------------  |-----------------------------------    |
+| 频段        | 52~2200MHz                | 1MHz~6GHz     | 300MHz~3.8GHz                     | 70MHz~6GHz                            |
+| 带宽        | 2.56MS/s                  | 20MS/s        | 40MS/s                            | 56MS/s                                |
+| 双工类型  | 只能接受                  | 半双工           | 全双工                           | 全双工                               |
+| 位宽        | 8bit                      | 8bit          | 12bit                             | 12bit                                 |
+| 主机接口  | USB2.0                    | USB2.0        | USB3.0                            | USB3.0                                |
+| FPGA      | N/A                       | CPLD.No FPGA  | 40KLE Altera Cyclone 4            | Xilinx Spartan-6 XC6SLX75             |
+| 微控制器  | RTL2832U                  | LPC4320       | Cypress FX3                       | Cypress FX3                           |
+| 开源程度  | 无官方版本，有逆向版本   | 完全开源      | 原理图、HDL代码、上位机代码开源     | 原理图、HDL代码、上位机、代码开源    |
+| 价格        | $20                       | $300          | $420                              | $675                                  |
+
 
 
 
