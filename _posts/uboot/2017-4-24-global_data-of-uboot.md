@@ -1,7 +1,7 @@
 ---
 layout: post
 title: uboot global_data 介绍
-category: 操作系统
+category: uboot
 tags: uboot,global_data,gd
 description: 介绍uboot的gloabl_data。
 ---
@@ -26,7 +26,7 @@ typedef struct global_data {
 	unsigned include/asm-arm/u-boot.hint baudrate;
 	unsigned long cpu_clk;	/* CPU clock in Hz!		*/
 	unsigned long bus_clk;
-include/asm-arm/u-boot.h	/* We cannot bracket this with CONFIG_PCI due to mpc5xxx */
+	/* We cannot bracket this with CONFIG_PCI due to mpc5xxx */
 	unsigned long pci_clk;
 	unsigned long mem_clk;
 	unsigned long have_console;	/* serial_init() was called */
@@ -91,5 +91,5 @@ include/asm-arm/u-boot.h	/* We cannot bracket this with CONFIG_PCI due to mpc5xx
 		phys_size_t size;
 	} bi_dram[CONFIG_NR_DRAM_BANKS];
 	#endif /* CONFIG_NR_DRAM_BANKS */
-} bd_t;
+	} bd_t;
 
