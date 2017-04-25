@@ -1,7 +1,7 @@
 ---
 layout: post
 title: uboot global_data 介绍
-category: uboot
+category: Uboot
 tags: uboot,global_data,gd
 description: 介绍uboot的gloabl_data。
 ---
