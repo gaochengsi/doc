@@ -19,7 +19,7 @@ global_data 在u-boot中是一个十分重要的数据结构，它主要存放�
 global_data的定义位于 include\asm-generic\global_data.h中，使用typedef struct global_data结构体来定义了gd_t，所以可以使用gd_t来进行定义。
 具体代码如下，根据使用的芯片，去掉了一些没使用的宏定义。
 
-```c
+```c++
 typedef struct global_data {
 	bd_t *bd;
 	unsigned long flags;
@@ -72,7 +72,7 @@ typedef struct global_data {
 
 * bd_t *bd,开发板的一些信息，位于include/asm-arm/u-boot.h中，由u-boot传递给Kernel,具体代码如下，已去掉无用宏定义段。
 
-```c
+```c++
 	typedef struct bd_info {
 	unsigned long	bi_memstart;	/* start of DRAM memory */
 	phys_size_t	bi_memsize;	/* size	 of DRAM memory in bytes */
@@ -116,7 +116,7 @@ typedef struct global_data {
 
 代码位于common/init/board_init.c中：
 
-```c
+```c++
 //传入的top为起始分配地址，由上而下分配，传入的地址不一定为内存顶部地址，函数在relocation之前调用
 ulong board_init_f_alloc_reserve(ulong top)
 {
@@ -181,7 +181,7 @@ void board_init_f_init_reserve(ulong base)
 
 代码如下，去除掉被宏定义包含的无关代码部分，位于arch/arm/lib/crt0.S：
 
-```c
+```c++
 ENTRY(_main)
 /*
  * Set up initial C runtime environment and call board_init_f(0).
@@ -226,21 +226,21 @@ ENTRY(_main)
  __注意__：最终global_data的地址存放在r9中了。
 
 ## 5.分配和初始化global_data之后，内存的分布如下：
---------------------------------------------CONFIG_SYS_INIT_SP_ADDR:0x91FF00
-				early malloc arena
---------------------------------------------malloc base
-				global_data
---------------------------------------------global_data基地址(r9)，也是堆栈起始位置
-				堆栈空间
---------------------------------------------堆栈结束
+--------------------------------------------CONFIG_SYS_INIT_SP_ADDR:0x91FF00  
+				early malloc arena  
+--------------------------------------------malloc base  
+				global_data  
+--------------------------------------------global_data基地址(r9)，也是堆栈起始位置  
+				堆栈空间  
+--------------------------------------------堆栈结束  
 
 ## 6.global_data如何使用
 
 前面我们一直强调了global_data的地址存放在r9中了。所以当我们需要global_data的时候，直接从r9寄存器中获取其地址即可。
 
-uboot中定义了一个宏DECLARE_GLOBAL_DATA_PTR，使我们可以更加简单地获取global_data。 
-定义如下： 
-arch/arm/include/asm/global_data.h
+uboot中定义了一个宏DECLARE_GLOBAL_DATA_PTR，使我们可以更加简单地获取global_data。
+
+代码位于：arch/arm/include/asm/global_data.h
 ```c
 #define DECLARE_GLOBAL_DATA_PTR		register volatile gd_t *gd asm ("r9")
 ```
