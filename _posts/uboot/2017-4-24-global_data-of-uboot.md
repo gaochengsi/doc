@@ -71,6 +71,7 @@ typedef struct global_data {
 ## 3.成员说明
 
 * bd_t *bd,开发板的一些信息，位于include/asm-arm/u-boot.h中，由u-boot传递给Kernel,具体代码如下，已去掉无用宏定义段。
+
 	```c
 	typedef struct bd_info {
 	unsigned long	bi_memstart;	/* start of DRAM memory */
