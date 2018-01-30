@@ -38,13 +38,14 @@ function content_click(is_show) {
 }
 
 $(function() {
+  var toc     = $('.pl_title'),
   // Search
   $('#search-input').on('input', function(e){
     var blogs = $(".pl__title").filter(function() {
       var reg = new RegExp($('#search-input').val(), "i");
       return reg.test($(this).text());
     });
-//     toc.hide();
+     toc.hide();
      blogs.fadeIn(350);
   });
   
