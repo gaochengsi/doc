@@ -45,7 +45,7 @@ $(function() {
       return reg.test($(this).text());
     });
 //     toc.hide();
-//     blogs.fadeIn(350);
+     blogs.fadeIn(350);
   });
   
 }
