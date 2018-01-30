@@ -38,7 +38,7 @@ function content_click(is_show) {
 }
 
 $(function() {
-  var toc     = $('.pl_title'),
+  var toc     = $('.pl__all'),
   // Search
   $('#search-input').on('input', function(e){
     var blogs = $(".pl__title").filter(function() {
