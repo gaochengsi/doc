@@ -60,7 +60,7 @@ $('#mobile-avatar').on('click', function(){
 
   // Search
   $('#search-input').on('input', function(e){
-    var blogs = $(".pl__title").filter(function() {
+    var blogs = $(".pl__all").filter(function() {
       var reg = new RegExp($('#search-input').val(), "i");
       return reg.test($(this).text());
     });
