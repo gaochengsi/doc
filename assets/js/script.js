@@ -37,7 +37,7 @@ $('.pl__all').on('click', function() {
   }
 });
 
-// Enable fullscreen.
+// Enable fullscreen.                       
 $('#js-fullscreen').on('click', function() {
   if (button.hasClass('fullscreen')) {
     sidebar.removeClass('fullscreen');
@@ -57,6 +57,16 @@ $('#js-fullscreen').on('click', function() {
 $('#mobile-avatar').on('click', function(){
   $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
 });
+
+  // Search
+  $('#search-input').on('input', function(){
+    var blogs = $(".pl__title").filter(function() {
+      var reg = new RegExp($('#search-input').val(), "i");
+      return reg.test($(this).text());
+    });
+     $('.pl__all').hide();
+     blogs.fadeIn(350);
+  });
 
 // Pjax
 $(document).pjax('#avatar, #mobile-avatar, .pl__all', '#pjax', { fragment: '#pjax', timeout: 10000 });
@@ -135,4 +145,3 @@ function afterPjax() {
   }check();
   container.scroll(check);
 }afterPjax();
-
