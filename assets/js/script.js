@@ -58,8 +58,9 @@ $('#mobile-avatar').on('click', function(){
   $('#sidebar, #pjax, #icon-arrow').addClass('fullscreen');
 });
 
+  var toc  = ,
   // Search
-  $('#search-input').on('input', function(){
+  $('#search-input').on('input', function(e){
     var blogs = $(".pl__title").filter(function() {
       var reg = new RegExp($('#search-input').val(), "i");
       return reg.test($(this).text());
