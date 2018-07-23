@@ -59,14 +59,14 @@ $('#mobile-avatar').on('click', function(){
 });
 
   // Search
-  $('#search-input').on('input', function(e){
-    var blogs = $(".pl__all").filter(function() {
-      var reg = new RegExp($('#search-input').val(), "i");
-      return reg.test($(this).text());
-    });
-     $('.pl__all').hide();
-     blogs.fadeIn(350);
-  });
+  // $('#search-input').on('input', function(e){
+  //   var blogs = $(".pl__all").filter(function() {
+  //     var reg = new RegExp($('#search-input').val(), "i");
+  //     return reg.test($(this).text());
+  //   });
+  //    $('.pl__all').hide();
+  //    blogs.fadeIn(350);
+  // });
 
 // Pjax
 $(document).pjax('#avatar, #mobile-avatar, .pl__all', '#pjax', { fragment: '#pjax', timeout: 10000 });
