@@ -9,6 +9,7 @@ tags: 堆溢出,ROP
 ## 主要思想和结果
 主要利用了 The House of Force；通过堆溢出，改写 top chunk 的size，然后再通过分配设定size 的 heap，使 top chunk 跳转到 free_got – 0x10，然后再进行 malloc 适当大小的heap，返回的堆地址就是free_got，通过往堆里写内容，从而改写free_got，达到劫持控制流。最终结果是程序调用 free，返回一个 shell。
 
+<script type="text/javascript" src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=default"></script>
 $$F(\omega) = \frac{1}{\sqrt{2\pi}} \int_{-\infty}^{\infty} f(t) \, e^{ - i \omega t}dt$$
 
 ## 背景知识
