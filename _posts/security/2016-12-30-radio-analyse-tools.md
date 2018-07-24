@@ -38,7 +38,7 @@ GNU Radio最早出现在2001年，2004年重写了整个项目，配合USRP，�
 
 SDR可以极大的“放大”程序员的能力。
 
-2009年，利用USRP，OpenBTS（http://openbts.org/)这个项目第一次用SDR实现了一真正能用的GSM基站。而且OpenBTShi开源的，使得每一个程序员只要有USRP，就可以搭建一个GSM小基站。后来，使用SDR来实现基站的尝试就一直没有停止过。2012年，著名的法国程序员Fabrice Bellard（http://www.bellard.org/)以一人之力，开发出了基于USRP+CPU结构的完整LTE基站的功能；而在传统的电信设备制造企业中，开发一个基站至少需要多个软硬件团队的相互配合。毫不夸张的说，Fabrice Bellard一个人相当于100个普通程序员的生产力。
+2009年，利用USRP，OpenBTS（http://openbts.org/) 这个项目第一次用SDR实现了一真正能用的GSM基站。而且OpenBTShi开源的，使得每一个程序员只要有USRP，就可以搭建一个GSM小基站。后来，使用SDR来实现基站的尝试就一直没有停止过。2012年，著名的法国程序员Fabrice Bellard（http://www.bellard.org/) 以一人之力，开发出了基于USRP+CPU结构的完整LTE基站的功能；而在传统的电信设备制造企业中，开发一个基站至少需要多个软硬件团队的相互配合。毫不夸张的说，Fabrice Bellard一个人相当于100个普通程序员的生产力。
 
 ### 1.2 SDR用途
 
