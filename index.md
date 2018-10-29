@@ -13,6 +13,11 @@ title: 个人博客
 
 此博客的源码托管在 [Github][2] 上，具体的使用方法可以参考 [yansu][3] 的说明，如果有任何问题，欢迎大家指正和讨论。
 
+## 打赏
+有兴趣的打赏的同学可以通过以下方式：
+paypal：gcs755385736@gmail.com
+
+
 
 [1]: http://jekyll.bootcss.com/
 [2]: https://github.com/radxa/docs
