@@ -15,7 +15,7 @@ title: ChengSi‘s Blog
 
 ## 打赏
 有兴趣的打赏的同学可以通过以下方式：
-paypal：gcs755385736@gmail.com
+paypal：gaochengsiwork@qq.com
 
 
 
